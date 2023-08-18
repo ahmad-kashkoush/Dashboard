@@ -2,7 +2,15 @@
 .d-flex {
   display: flex;
 }
-
+.juc-between {
+  justify-content: space-between;
+}
+.align-c {
+  align-items: center;
+}
+.gap-20 {
+  gap: 20px;
+}
 /* ? End Box Model Classes */
 
 /* ! start Colors */
@@ -18,10 +26,10 @@
 .fs-14 {
   font-size: 14px;
 }
-.txt-c{
+.txt-c {
   text-align: center;
 }
-.txt-cap{
+.txt-cap {
   text-transform: capitalize;
 }
 /* ? End fonts */
@@ -29,32 +37,36 @@
 .p-20 {
   padding: 20px;
 }
-.m-20{
+
+.m-20 {
   margin: 20px;
 }
+.p-15 {
+  padding: 15px;
+}
 
-.w-full{
+.w-full {
   width: 100%;
 }
 
 /* ? End  Margin + padding */
 /* ! Start Position */
-.p-relative{
+.p-relative {
   position: relative;
 }
 /* ? End Position */
 /* ! Start Border */
-.rad-6{
+.rad-6 {
   border-radius: 6px;
 }
-.rad-half{
+.rad-half {
   border-radius: 50%;
 }
 /* ? End Border */
 
 /* ! @media */
-@media (max-width:767px){
-  .hide-mobile{
+@media (max-width: 767px) {
+  .hide-mobile {
     display: none;
   }
 }
