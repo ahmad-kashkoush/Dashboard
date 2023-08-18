@@ -42,10 +42,10 @@ a {
 /* ! Start Aside */
 aside {
   width: 250px;
-  box-shadow: 0 0  10px #DDD;
+  box-shadow: 0 0 10px #ddd;
 }
-@media (max-width:767px){
-  aside.sidebar{
+@media (max-width: 767px) {
+  aside.sidebar {
     padding: 10px;
     text-align: center;
     width: 58px;
@@ -55,7 +55,6 @@ aside .special-heading {
   font-size: 20px;
   text-align: center;
   margin-bottom: 50px;
-  
 }
 aside .special-heading::before {
   content: "";
@@ -88,7 +87,7 @@ aside .special-heading::after {
   aside .special-heading {
     font-size: 13px;
     margin-bottom: 15px;
-  } 
+  }
 }
 aside > ul li a {
   display: block;
@@ -110,3 +109,56 @@ aside > ul li a:hover,
   background-color: #f6f6f6;
 }
 /* ? End Aside */
+/* !Start Content */
+.content {
+  background-color: #333;
+}
+/* ! Start Navbar */
+.content nav {
+}
+.content nav .search input[type="search"] {
+  width: 160px;
+  height: 40px;
+
+  padding-left: 30px;
+  font-size: 14px;
+
+  border: none;
+  border: 1px solid #cccccc;
+  overflow: hidden;
+  transition: var(--main-transition);
+}
+.content nav .search > i {
+  color: #888888;
+  position: absolute;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+  font-weight: bolder;
+}
+.content nav .search input[type="search"]:focus {
+  width: 200px;
+}
+.content nav .search input[type="search"]:focus::placeholder {
+  color: transparent;
+}
+
+.content nav .rhs .bell::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  --sz: 10px;
+  width: var(--sz);
+  height: var(--sz);
+  border-radius: 50%;
+  background-color: #f44336;
+}
+.content nav .rhs img {
+  --sz: 40px;
+  width: var(--sz);
+  height: var(--sz);
+}
+/* ? End Navbar */
+/* ? End Content */
