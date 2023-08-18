@@ -20,9 +20,16 @@ a {
 /*? End Global Rules */
 /* ! Start Global Variables */
 :root {
-  --main-text-color: #000000;
-  --white-color: #ffffff;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --white-color:#fff;
   --main-transition: 0.3s;
+  --main-text-color:#000;
+  
 }
 /* ? End Global Variables */
 /* ! Start Components */
