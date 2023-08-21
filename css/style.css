@@ -347,6 +347,29 @@ aside > ul li a:hover,
   }
 }
 /* ? EndTickets Statistics */
+/* ! Start latest news */
+.latest-news{}
+.latest-news .news{}
+.latest-news .news .single-news{
+  align-items: center;
+}
+.latest-news .news .single-news:not(:last-child){
+  border-bottom: 1px solid #eeeeee;
+}
+.latest-news .single-news .details{}
+.latest-news .single-news .details > img{
+  width: 100px;
+  height: 50px;
+  border-radius: 6px;
+
+}
+.latest-news .single-news .details .text{}
+.latest-news .single-news .details .text p:first-of-type{}
+.latest-news .single-news .details .text p:last-of-type{}
+.latest-news .single-news .date{
+  font-size: 13px;
+}
+/* ? End latest news */
 
 /* ? End Grid */
 /* ? End Content */

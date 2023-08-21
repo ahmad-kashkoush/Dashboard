@@ -123,6 +123,9 @@
 .txt-cap {
   text-transform: capitalize;
 }
+.w-bold{
+  font-weight: bold;
+}
 /* ? End fonts */
 
 .w-full {
