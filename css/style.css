@@ -268,12 +268,7 @@ aside > ul li a:hover,
 }
 /* ?End Quick Draft */
 /* ! Start Yearly targets */
-.yearly-target {
-}
-.yearly-target .targets {
-}
-.yearly-target .targets .target {
-}
+
 .yearly-target .targets .target .icon {
   width: 80px;
   height: 80px;
@@ -304,7 +299,7 @@ aside > ul li a:hover,
   margin-top: 10px;
   position: relative;
 }
-.yearly-target .targets .target-content .progress::before{
+.yearly-target .targets .target-content .progress::before {
   content: attr(data-progress);
   position: absolute;
   top: -34px;
@@ -315,7 +310,6 @@ aside > ul li a:hover,
   padding: 2px 5px;
   border-radius: 6px;
   font-size: 14px;
-
 }
 
 .yearly-target .targets .target-content .progress::after {
@@ -329,9 +323,30 @@ aside > ul li a:hover,
   height: 0;
   border: 7px solid transparent;
   border-top-color: var(--c-color);
-
 }
 /* ? End Yearly targets */
+/* ! Start Tickets Statistics */
+
+.ticket-statistics .tickets .ticket {
+  width: calc(50% - 20px);
+  border: 1px solid #ccc;
+}
+.ticket-statistics .ticket > i {
+  font-size: 27px;
+}
+.ticket-statistics .ticket > h2 {
+  font-size: 27px;
+  font-weight: 600;
+}
+.ticket-statistics .ticket > p {
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .ticket-statistics .tickets .ticket {
+    width: 100%;
+  }
+}
+/* ? EndTickets Statistics */
 
 /* ? End Grid */
 /* ? End Content */
