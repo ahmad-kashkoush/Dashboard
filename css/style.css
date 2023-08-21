@@ -263,10 +263,75 @@ aside > ul li a:hover,
 .quick-draft > form + a {
   margin-left: auto;
 }
-.quick-draft > form + a:hover{
+.quick-draft > form + a:hover {
   background-color: var(--blue-alt-color);
 }
 /* ?End Quick Draft */
+/* ! Start Yearly targets */
+.yearly-target {
+}
+.yearly-target .targets {
+}
+.yearly-target .targets .target {
+}
+.yearly-target .targets .target .icon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--bg-color);
+  color: var(--c-color);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yearly-target .targets .target-content {
+  flex: 1;
+}
+
+.yearly-target .targets .target-content p:last-of-type {
+  font-weight: bold;
+  font-size: 18px;
+}
+.yearly-target .targets .target-content .progress {
+  background-image: linear-gradient(
+    to right,
+    var(--c-color),
+    var(--c-color) var(--width),
+    var(--bg-color) var(--width)
+  );
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  position: relative;
+}
+.yearly-target .targets .target-content .progress::before{
+  content: attr(data-progress);
+  position: absolute;
+  top: -34px;
+  left: calc(var(--width));
+  transform: translateX(-50%);
+  background: var(--c-color);
+  color: var(--white-color);
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-size: 14px;
+
+}
+
+.yearly-target .targets .target-content .progress::after {
+  content: "";
+  /* background-color: var(--c-color); */
+  position: absolute;
+  top: -12px;
+  left: calc(var(--width) - 0px);
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top-color: var(--c-color);
+
+}
+/* ? End Yearly targets */
 
 /* ? End Grid */
 /* ? End Content */
