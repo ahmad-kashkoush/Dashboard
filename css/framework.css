@@ -10,20 +10,22 @@
   --main-transition: 0.3s;
   --main-text-color: #000;
 }
-/* ? End Global Variables */
+/* ? End Global Variables  */
 /* ! Start Box Model Classes */
 .d-flex {
   display: flex;
 }
-.d-block{
+.d-block {
   display: block;
 }
 .d-grid {
   display: grid;
-  
 }
-.flex-col{
+.flex-col {
   flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .juc-between {
   justify-content: space-between;
@@ -40,20 +42,23 @@
 .m-20 {
   margin: 20px;
 }
-.mt-20{
+.mt-20 {
   margin-top: 20px;
 }
-.mt-10{
+.mt-10 {
   margin-top: 10px;
 }
-.mb-20{
+.mb-20 {
   margin-bottom: 20px;
 }
 
-.mb-5{
+.mb-5 {
   margin-bottom: 5px;
 }
-.p-10{
+.mb-10 {
+  margin-bottom: 10px;
+}
+.p-10 {
   padding: 10px;
 }
 .p-20 {
@@ -62,10 +67,10 @@
 .p-15 {
   padding: 15px;
 }
-.pt-20{
+.pt-20 {
   padding-top: 20px;
 }
-.pb-20{
+.pb-20 {
   padding-bottom: 20px;
 }
 /* ? End  Margin + padding */
@@ -74,22 +79,34 @@
 .bg-white {
   background-color: var(--white-color);
 }
-.bg-eee{
+.bg-eee {
   background-color: #eee;
 }
-.bg-blue{
+.bg-blue {
   background-color: var(--blue-color);
 }
 
-.c-white{
+.c-white {
   color: var(--white-color);
 }
 
 .c-black {
   color: var(--main-text-color);
 }
-.c-grey{
+.c-grey {
   color: var(--grey-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-blue {
+  color: var(--blue-color);
+}
+.c-green {
+  color: var(--green-color);
+}
+.c-red {
+  color: var(--red-color);
 }
 
 /* ? End Colors */
@@ -97,7 +114,7 @@
 .fs-14 {
   font-size: 14px;
 }
-.fs-16{
+.fs-16 {
   font-size: 16px;
 }
 .txt-c {
@@ -111,7 +128,7 @@
 .w-full {
   width: 100%;
 }
-.w-fit{
+.w-fit {
   width: fit-content;
 }
 
@@ -124,10 +141,13 @@
 .rad-6 {
   border-radius: 6px;
 }
+.rad-10 {
+  border-radius: 10px;
+}
 .rad-half {
   border-radius: 50%;
 }
-.b-none{
+.b-none {
   border: none;
 }
 /* ? End Border */
@@ -137,18 +157,18 @@
   .hide-mobile {
     display: none;
   }
-  .txt-c-mobile{
+  .txt-c-mobile {
     text-align: center;
   }
-  .d-block-mobile{
+  .d-block-mobile {
     display: block;
   }
-  .flex-dir-col-mobile{
+  .flex-dir-col-mobile {
     flex-direction: column;
   }
 }
 /* ! Start Components */
-.btn-shape{
+.btn-shape {
   padding: 5px 15px;
   border-radius: 6px;
   font-size: 14px;
