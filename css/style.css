@@ -17,6 +17,18 @@ a {
 *:focus {
   outline: none;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-alt-color);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+}
 /*? End Global Rules */
 /* ! Start Global Variables */
 :root {
@@ -26,10 +38,9 @@ a {
   --green-color: #22c55e;
   --red-color: #f44336;
   --grey-color: #888;
-  --white-color:#fff;
+  --white-color: #fff;
   --main-transition: 0.3s;
-  --main-text-color:#000;
-  
+  --main-text-color: #000;
 }
 /* ? End Global Variables */
 /* ! Start Components */
@@ -114,14 +125,11 @@ aside > ul li a:hover,
   background-color: #333;
 }
 /* ! Start Navbar */
-.content nav {
-}
 .content nav .search input[type="search"] {
   width: 160px;
   height: 40px;
-
-  padding-left: 30px;
-  font-size: 14px;
+  margin-left: 5px;
+  padding-left: 30px; /*for icon*/
 
   border: none;
   border: 1px solid #cccccc;
@@ -134,7 +142,7 @@ aside > ul li a:hover,
   font-size: 16px;
   top: 50%;
   transform: translateY(-50%);
-  left: 8px;
+  left: 13px;
   font-weight: bolder;
 }
 .content nav .search input[type="search"]:focus {
@@ -161,4 +169,101 @@ aside > ul li a:hover,
   height: var(--sz);
 }
 /* ? End Navbar */
+.content {
+  background-color: #f1f5f9;
+}
+.content > .main-title {
+  font-weight: 600;
+}
+.content > .main-title::after {
+  content: "";
+  position: absolute;
+  width: 117px;
+  height: 3px;
+  background-image: linear-gradient(
+    to right,
+    var(--main-text-color),
+    var(--main-text-color) 35%,
+    #fff 20%
+  );
+  bottom: 0;
+  left: 21px;
+}
+/* ! Start Grid */
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+/* !Start Welcome Widget */
+
+.wrapper .box-content > img {
+  --sz: 64px;
+  width: var(--sz);
+  height: var(--sz);
+  border: 4px solid var(--white-color);
+
+  position: absolute;
+  top: -32px;
+  left: 20px;
+}
+@media (max-width: 768px) {
+  .wrapper .box-content > img {
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.wrapper .welcome .openning > img {
+  width: 200px;
+}
+.wrapper .welcome .table {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.wrapper .welcome .table > div {
+  flex: 1;
+}
+
+/* * [Mistake-1] I've Used before and after to make border 😅 😅 😅 */
+/* .wrapper .welcome .table::before,
+.wrapper .welcome .table::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #eeeeee;
+  left: 0;
+} */
+/* .wrapper .welcome .table::before{top: 0;}
+.wrapper .welcome .table::after{bottom: 0;} */
+@media (max-width: 767px) {
+  .wrapper .welcome .table > div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .wrapper .welcome {
+    padding-bottom: 20px;
+  }
+}
+
+.wrapper .welcome .profile-link {
+  align-self: self-end;
+  text-align: end;
+  /* width: fit-content; */
+  margin-right: 20px;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+.wrapper .welcome .profile-link:hover {
+  background-color: var(--blue-alt-color);
+}
+/* ?End Welcome Widget */
+/* !Start Quick Draft */
+.quick-draft > form textarea {
+  min-height: 180px;
+}
+.quick-draft > form + a {
+  margin-left: auto;
+}
+/* ?End Quick Draft */
+
+/* ? End Grid */
 /* ? End Content */

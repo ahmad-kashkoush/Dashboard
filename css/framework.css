@@ -1,6 +1,29 @@
+/* ! Start Global Variables */
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --white-color: #fff;
+  --main-transition: 0.3s;
+  --main-text-color: #000;
+}
+/* ? End Global Variables */
 /* ! Start Box Model Classes */
 .d-flex {
   display: flex;
+}
+.d-block{
+  display: block;
+}
+.d-grid {
+  display: grid;
+  
+}
+.flex-col{
+  flex-direction: column;
 }
 .juc-between {
   justify-content: space-between;
@@ -12,19 +35,66 @@
   gap: 20px;
 }
 /* ? End Box Model Classes */
+/* ! Start Margin + padding */
+/*  sort m-mt-mr-mb-ml */
+.m-20 {
+  margin: 20px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.p-10{
+  padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.p-15 {
+  padding: 15px;
+}
+.pt-20{
+  padding-top: 20px;
+}
+.pb-20{
+  padding-bottom: 20px;
+}
+/* ? End  Margin + padding */
 
 /* ! start Colors */
 .bg-white {
   background-color: var(--white-color);
 }
+.bg-eee{
+  background-color: #eee;
+}
+.bg-blue{
+  background-color: var(--blue-color);
+}
+
+.c-white{
+  color: var(--white-color);
+}
 
 .c-black {
   color: var(--main-text-color);
 }
+.c-grey{
+  color: var(--grey-color);
+}
+
 /* ? End Colors */
 /* ! Start fonts */
 .fs-14 {
   font-size: 14px;
+}
+.fs-16{
+  font-size: 16px;
 }
 .txt-c {
   text-align: center;
@@ -33,23 +103,14 @@
   text-transform: capitalize;
 }
 /* ? End fonts */
-/* ! Start Margin + padding */
-.p-20 {
-  padding: 20px;
-}
-
-.m-20 {
-  margin: 20px;
-}
-.p-15 {
-  padding: 15px;
-}
 
 .w-full {
   width: 100%;
 }
+.w-fit{
+  width: fit-content;
+}
 
-/* ? End  Margin + padding */
 /* ! Start Position */
 .p-relative {
   position: relative;
@@ -62,6 +123,9 @@
 .rad-half {
   border-radius: 50%;
 }
+.b-none{
+  border: none;
+}
 /* ? End Border */
 
 /* ! @media */
@@ -69,4 +133,21 @@
   .hide-mobile {
     display: none;
   }
+  .txt-c-mobile{
+    text-align: center;
+  }
+  .d-block-mobile{
+    display: block;
+  }
+  .flex-dir-col-mobile{
+    flex-direction: column;
+  }
 }
+/* ! Start Components */
+.btn-shape{
+  padding: 5px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: var(--main-transition);
+}
+/* ? EndComponents */
