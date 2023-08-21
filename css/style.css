@@ -263,6 +263,9 @@ aside > ul li a:hover,
 .quick-draft > form + a {
   margin-left: auto;
 }
+.quick-draft > form + a:hover{
+  background-color: var(--blue-alt-color);
+}
 /* ?End Quick Draft */
 
 /* ? End Grid */
