@@ -481,6 +481,23 @@ aside > ul li a:hover,
   left: -32px;
 }
 
-/* ? EndReminders */
+/* ? End Reminders */
+/* ! Start  Latest Posts*/
+
+.latest-posts .person {
+  border-bottom: 1px solid #eee;
+}
+.latest-posts .person > img {
+  width: 48px;
+  height: 48px;
+}
+
+.latest-posts > p {
+  line-height: 1.5;
+  padding-bottom: 69px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+/* ? End  Latest Posts*/
 /* ? End Grid */
 /* ? End Content */
