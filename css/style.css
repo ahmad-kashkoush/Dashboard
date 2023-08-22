@@ -499,5 +499,50 @@ aside > ul li a:hover,
   margin-bottom: 20px;
 }
 /* ? End  Latest Posts*/
+/* ! Start Social media status */
+.social-media {
+}
+.social-media ul {
+}
+.social-media ul li {
+  padding-right: 10px;
+  background-color: var(--c-color);
+}
+.social-media ul li .app {
+}
+.social-media ul li .app .icon {
+  background: var(--bg-color);
+  color: var(--white-color);
+  font-size: 15px;
+  /* padding: 10px; */
+  width: 54px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: center;
+  margin-right: 18px;
+  transition: var(--main-transition);
+}
+.social-media ul li .app .icon:hover{
+  transform: rotate(5deg);
+}
+.social-media ul li .app .icon i{
+  transition: var(--main-transition);
+}
+.social-media ul li .app .icon:hover i{
+  transform: translateX(3px);
+  transition-delay: .3s;
+}
+.social-media ul li .app span {
+  color: var(--bg-color);
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.social-media ul li .cmnd {
+  color: var(--white-color);
+  background-color: var(--bg-color);
+}
+/* ? End Social media status */
 /* ? End Grid */
 /* ? End Content */
