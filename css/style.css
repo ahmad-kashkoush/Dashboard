@@ -390,6 +390,8 @@ aside > ul li a:hover,
 }
 .latest-uploads .single-news {
   padding-bottom: 10px;
+  padding-top: 0;
+  margin-bottom: 10px;
 }
 .latest-uploads .single-news .details {
   gap: 10px;
@@ -405,5 +407,69 @@ aside > ul li a:hover,
   font-weight: 600;
 }
 /* ? End Latest Uploads */
+/* ! Start Latest Projects */
+.latest-projects {
+}
+.latest-projects .details {
+}
+.latest-projects .projects {
+  padding-left: 26px;
+  margin-left: 22px px;
+  border-left: 2px solid var(--blue-color);
+}
+.latest-projects .projects .project {
+  position: relative;
+}
+.latest-projects .projects .project::before {
+  content: "";
+  position: absolute;
+  --sz: 18px;
+  width: var(--sz);
+  height: var(--sz);
+  border-radius: 50%;
+  top: 3px;
+  left: -35px;
+
+  z-index: 1;
+}
+.latest-projects .projects .project.done::before{
+  background-color: var(--blue-color);
+}
+.latest-projects .projects .project.current::before{
+  animation: oc 1.5s ease-in-out  infinite;
+}
+@keyframes oc {
+  0%, 100%{
+    background-color: transparent;
+  }
+  75%{
+    background-color: var(--blue-color);
+  }
+}
+.latest-projects .projects .project::after {
+
+  content: "";
+  position: absolute;
+  --sz: 18px;
+  width: var(--sz);
+  height: var(--sz);
+  border-radius: 50%;
+  top: 1px;
+  left: calc(0px - 26px - (var(--sz) / 2 + 2px));
+  background-color: var(--white-color);
+  border: 2px solid var(--blue-color);
+  transform: scale(1.2);
+ 
+
+}
+.latest-projects .details > img {
+  width: 160px;
+  align-self: end;
+  filter: opacity(0.1);
+  position: absolute;
+  bottom: -23px;
+  right: -25px;
+}
+/* ? End Latest Projects */
 /* ? End Grid */
 /* ? End Content */
