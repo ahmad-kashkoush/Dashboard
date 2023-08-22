@@ -348,28 +348,62 @@ aside > ul li a:hover,
 }
 /* ? EndTickets Statistics */
 /* ! Start latest news */
-.latest-news{}
-.latest-news .news{}
-.latest-news .news .single-news{
+
+.latest-news .news .single-news {
   align-items: center;
 }
-.latest-news .news .single-news:not(:last-child){
+.latest-news .news .single-news:not(:last-child) {
   border-bottom: 1px solid #eeeeee;
 }
-.latest-news .single-news .details{}
-.latest-news .single-news .details > img{
+
+.latest-news .single-news .details > img {
   width: 100px;
   height: 50px;
   border-radius: 6px;
-
 }
-.latest-news .single-news .details .text{}
-.latest-news .single-news .details .text p:first-of-type{}
-.latest-news .single-news .details .text p:last-of-type{}
-.latest-news .single-news .date{
+.latest-news .single-news .date {
   font-size: 13px;
 }
 /* ? End latest news */
-
+/* ! Start Latest tasks */
+.latest-tasks {
+}
+.latest-tasks .task {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.latest-tasks .task:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.latest-tasks .task.done h3,
+.latest-tasks .task.done p {
+  text-decoration: line-through;
+  color: var(--grey-color);
+}
+.latest-tasks .task.done i {
+  color: var(--grey-color);
+}
+/* ? End Latest tasks */
+/* ! Start Latest Uploads */
+/* *I've copied latest news section because it's the same style, but there small differences */
+.latest-uploads .news {
+}
+.latest-uploads .single-news {
+  padding-bottom: 10px;
+}
+.latest-uploads .single-news .details {
+  gap: 10px;
+}
+.latest-uploads .single-news .details > img {
+  width: 40px;
+}
+.latest-uploads .single-news .details .text > p:first-of-type {
+  font-weight: 600;
+  font-size: 18px;
+}
+.latest-uploads.single-news .date {
+  font-weight: 600;
+}
+/* ? End Latest Uploads */
 /* ? End Grid */
 /* ? End Content */
