@@ -366,8 +366,7 @@ aside > ul li a:hover,
 }
 /* ? End latest news */
 /* ! Start Latest tasks */
-.latest-tasks {
-}
+
 .latest-tasks .task {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -386,8 +385,7 @@ aside > ul li a:hover,
 /* ? End Latest tasks */
 /* ! Start Latest Uploads */
 /* *I've copied latest news section because it's the same style, but there small differences */
-.latest-uploads .news {
-}
+
 .latest-uploads .single-news {
   padding-bottom: 10px;
   padding-top: 0;
@@ -408,10 +406,7 @@ aside > ul li a:hover,
 }
 /* ? End Latest Uploads */
 /* ! Start Latest Projects */
-.latest-projects {
-}
-.latest-projects .details {
-}
+
 .latest-projects .projects {
   padding-left: 26px;
   margin-left: 22px px;
@@ -432,22 +427,22 @@ aside > ul li a:hover,
 
   z-index: 1;
 }
-.latest-projects .projects .project.done::before{
+.latest-projects .projects .project.done::before {
   background-color: var(--blue-color);
 }
-.latest-projects .projects .project.current::before{
-  animation: oc 1.5s ease-in-out  infinite;
+.latest-projects .projects .project.current::before {
+  animation: oc 1.5s ease-in-out infinite;
 }
 @keyframes oc {
-  0%, 100%{
+  0%,
+  100% {
     background-color: transparent;
   }
-  75%{
+  75% {
     background-color: var(--blue-color);
   }
 }
 .latest-projects .projects .project::after {
-
   content: "";
   position: absolute;
   --sz: 18px;
@@ -459,8 +454,6 @@ aside > ul li a:hover,
   background-color: var(--white-color);
   border: 2px solid var(--blue-color);
   transform: scale(1.2);
- 
-
 }
 .latest-projects .details > img {
   width: 160px;
@@ -471,5 +464,23 @@ aside > ul li a:hover,
   right: -25px;
 }
 /* ? End Latest Projects */
+/* ! Start Reminders */
+
+.reminders > ul li {
+  border-left: 2px solid var(--bg-color);
+}
+.reminders > ul li::before {
+  content: "";
+  --sz: 15px;
+  width: var(--sz);
+  height: var(--sz);
+  background-color: var(--bg-color);
+  position: absolute;
+  border-radius: 50%;
+  top: calc(50% - var(--sz) / 2);
+  left: -32px;
+}
+
+/* ? EndReminders */
 /* ? End Grid */
 /* ? End Content */
