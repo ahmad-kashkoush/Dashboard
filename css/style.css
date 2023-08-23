@@ -590,7 +590,8 @@ aside > ul li a:hover,
 /* ? End Dashboard Page************************************************* */
 /* ! Start Courses Page */
 /* ! Start Course Wrapper */
-.course-wrapper {
+.course-wrapper,
+.friends-wrapper {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
@@ -634,3 +635,42 @@ aside > ul li a:hover,
 }
 
 /* ? EndCourse Wrapper */
+/* ! start Friends Wrapper */
+
+.friends-wrapper .friend {
+  padding: 20px;
+}
+.friends-wrapper .friend .img-holder {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+.friends-wrapper .friend .img-holder > img {
+  width: 100px;
+  height: 100px;
+}
+.friends-wrapper .friend .img-holder .contact {
+  position: absolute;
+  top: -11px;
+  left: -7px;
+}
+.friends-wrapper .friend .img-holder .contact > i {
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.friends-wrapper .friend .img-holder .contact > i:hover {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.friends-wrapper .friend .details {
+  border-bottom: 1px solid #eee;
+}
+
+.friends-wrapper .friend .details .info + span {
+  text-transform: uppercase;
+  color: #fdecce;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+/* ? End Friends Wrapper */
