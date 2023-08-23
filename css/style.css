@@ -191,7 +191,8 @@ aside > ul li a:hover,
   left: 21px;
 }
 /* ! Start Grid */
-.wrapper {
+.wrapper,
+.projects-wrapper {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 /* !Start Welcome Widget */
@@ -674,3 +675,45 @@ aside > ul li a:hover,
 }
 
 /* ? End Friends Wrapper */
+/* ! Start Projects wrapper */
+.projects-wrapper {
+}
+.projects-wrapper li {
+}
+.projects-wrapper .date {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.projects-wrapper .title > span:first-of-type {
+}
+.projects-wrapper .title > span:last-of-type {
+}
+.projects-wrapper .img-holder {
+  margin-top: 52px;
+  margin-bottom: 10px;
+}
+.projects-wrapper .img-holder > img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--white-color);
+}
+.projects-wrapper .img-holder > img {
+  margin-right: -20px;
+}
+.projects-wrapper .tags {
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.projects-wrapper .price .bar {
+  width: 260px;
+  height: 8px;
+  background-image: linear-gradient(
+    to right,
+    var(--bg-color),
+    var(--bg-color) var(--width),
+    #eee var(--width)
+  );
+}
+/* ? End Projects wrapper */
