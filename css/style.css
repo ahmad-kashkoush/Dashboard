@@ -123,6 +123,7 @@ aside > ul li a:hover,
 /* !Start Content */
 .content {
   background-color: #333;
+  overflow: hidden;
 }
 /* ! Start Navbar */
 .content nav .search input[type="search"] {
@@ -414,6 +415,7 @@ aside > ul li a:hover,
 }
 .latest-projects .projects .project {
   position: relative;
+  margin-bottom: 30px;
 }
 .latest-projects .projects .project::before {
   content: "";
@@ -524,15 +526,15 @@ aside > ul li a:hover,
   margin-right: 18px;
   transition: var(--main-transition);
 }
-.social-media ul li .app .icon:hover{
+.social-media ul li .app .icon:hover {
   transform: rotate(5deg);
 }
-.social-media ul li .app .icon i{
+.social-media ul li .app .icon i {
   transition: var(--main-transition);
 }
-.social-media ul li .app .icon:hover i{
+.social-media ul li .app .icon:hover i {
   transform: translateX(3px);
-  transition-delay: .3s;
+  transition-delay: 0.3s;
 }
 .social-media ul li .app span {
   color: var(--bg-color);
@@ -544,5 +546,53 @@ aside > ul li a:hover,
   background-color: var(--bg-color);
 }
 /* ? End Social media status */
-/* ? End Grid */
-/* ? End Content */
+/* ! Start Project table */
+.projects-table {
+
+}
+.table-holder{
+  overflow-x: auto;
+  width: 100%;
+
+}
+.projects-table table {
+  min-width: 1000px;
+  width: 100%;
+  background-color: #eee;
+  border-spacing: 1px;
+}
+
+.projects-table table thead td {
+  padding: 15px;
+}
+.projects-table table tbody tr {
+  transition: var(--main-transition);
+}
+.projects-table table tbody tr:hover{
+  background-color: #faf7f7;
+}
+.projects-table table tbody td {
+  padding: 20px;
+  font-weight: 600;
+}
+.projects-table table tbody td.team {
+  display: flex;
+  align-items: center;
+  /* position: relative;
+  width: 120px; */
+}
+.projects-table table tbody td.team > img {
+  /* position: absolute; */
+  width: 35px;
+  height: 35px;
+  /* top: 50%; */
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+}
+
+.projects-table table tbody td.team > img:not(:first-of-type){
+  margin-left: -15px;
+}
+/* ? End Project table */
+/* ? End Dashboard Page************************************************* */
+/* ! Start Courses Page */

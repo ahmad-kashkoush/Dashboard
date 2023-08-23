@@ -36,7 +36,7 @@
 .gap-20 {
   gap: 20px;
 }
-.gap-10{
+.gap-10 {
   gap: 10px;
 }
 /* ? End Box Model Classes */
@@ -111,6 +111,15 @@
 }
 .bg-blue {
   background-color: var(--blue-color);
+}
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-red {
+  background-color: var(--red-color);
+}
+.bg-green{
+  background-color: var(--green-color);
 }
 
 .c-white {
@@ -206,6 +215,14 @@
 /* ! Start Components */
 .btn-shape {
   padding: 5px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: var(--main-transition);
+}
+.stat {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 10px;
   border-radius: 6px;
   font-size: 14px;
   transition: var(--main-transition);
