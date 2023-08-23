@@ -502,16 +502,12 @@ aside > ul li a:hover,
 }
 /* ? End  Latest Posts*/
 /* ! Start Social media status */
-.social-media {
-}
-.social-media ul {
-}
+
 .social-media ul li {
   padding-right: 10px;
   background-color: var(--c-color);
 }
-.social-media ul li .app {
-}
+
 .social-media ul li .app .icon {
   background: var(--bg-color);
   color: var(--white-color);
@@ -547,13 +543,10 @@ aside > ul li a:hover,
 }
 /* ? End Social media status */
 /* ! Start Project table */
-.projects-table {
 
-}
-.table-holder{
+.table-holder {
   overflow-x: auto;
   width: 100%;
-
 }
 .projects-table table {
   min-width: 1000px;
@@ -568,7 +561,7 @@ aside > ul li a:hover,
 .projects-table table tbody tr {
   transition: var(--main-transition);
 }
-.projects-table table tbody tr:hover{
+.projects-table table tbody tr:hover {
   background-color: #faf7f7;
 }
 .projects-table table tbody td {
@@ -590,9 +583,54 @@ aside > ul li a:hover,
   border-radius: 50%;
 }
 
-.projects-table table tbody td.team > img:not(:first-of-type){
+.projects-table table tbody td.team > img:not(:first-of-type) {
   margin-left: -15px;
 }
 /* ? End Project table */
 /* ? End Dashboard Page************************************************* */
 /* ! Start Courses Page */
+/* ! Start Course Wrapper */
+.course-wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.course-wrapper li .img-holder {
+  margin-bottom: 20px;
+}
+.course-wrapper .img-holder > img:first-of-type {
+  width: 100%;
+}
+.course-wrapper .img-holder > img:last-of-type {
+  width: 64px;
+  height: 64px;
+  border: 2px solid var(--white-color);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.course-wrapper li > p {
+  line-height: 1.5;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.course-wrapper li .likes {
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  padding: 15px;
+}
+.course-wrapper li .likes span:nth-of-type(1) {
+  font-size: 14px;
+}
+.course-wrapper li .likes span:nth-of-type(2) {
+  font-size: 14px;
+}
+.course-wrapper li .likes span:nth-of-type(3) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ? EndCourse Wrapper */
