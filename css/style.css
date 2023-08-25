@@ -192,7 +192,8 @@ aside > ul li a:hover,
 }
 /* ! Start Grid */
 .wrapper,
-.projects-wrapper {
+.projects-wrapper,
+.plan-wrapper {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 /* !Start Welcome Widget */
@@ -676,19 +677,13 @@ aside > ul li a:hover,
 
 /* ? End Friends Wrapper */
 /* ! Start Projects wrapper */
-.projects-wrapper {
-}
-.projects-wrapper li {
-}
+
 .projects-wrapper .date {
   position: absolute;
   right: 10px;
   top: 10px;
 }
-.projects-wrapper .title > span:first-of-type {
-}
-.projects-wrapper .title > span:last-of-type {
-}
+
 .projects-wrapper .img-holder {
   margin-top: 52px;
   margin-bottom: 10px;
@@ -717,3 +712,87 @@ aside > ul li a:hover,
   );
 }
 /* ? End Projects wrapper */
+/* ! Start File statistics */
+.file-statistics {
+  min-width: 260px;
+  order: 2;
+  height: fit-content;
+}
+
+.file-statistics ul li {
+  border: 1px solid #eee;
+  margin-top: 15px;
+}
+
+/* ? End File statistics */
+/* ! Start File Wrapper */
+.file-wrapper {
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.file-wrapper li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+}
+.file-wrapper li .head > img {
+  width: 64px;
+  height: 64px;
+  transition: var(--main-transition);
+}
+.file-wrapper li:hover .head > img {
+  transform: rotate(5deg);
+}
+
+.file-wrapper li .head + span {
+  text-align: start;
+  border-bottom: 1px solid #eee;
+}
+
+/* ? End File Wrapper */
+
+.plan-wrapper > li {
+  flex: 1;
+}
+.plan-wrapper > li .head {
+  border: 3px solid #fff;
+  outline: 3px solid var(--bg-color);
+}
+
+.plan-wrapper > li .head h3:last-of-type {
+  font-size: 48px;
+  font-weight: 600;
+}
+.plan-wrapper > li .head h3:last-of-type i {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 48px - 20px);
+  font-size: 30px;
+}
+
+.plan-wrapper > li .details > li {
+  border-bottom: 1px solid #eee;
+}
+
+.plan-wrapper > li .details > li::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 600;
+  color: var(--green-color);
+  position: absolute;
+  font-size: 16px;
+}
+.plan-wrapper > li .details > li.no::before {
+  content: "\f00d";
+  color: var(--red-color);
+}
+.plan-wrapper > li .details > li > span {
+  margin-left: 25px;
+}
+
+.plan-wrapper > li > a {
+  display: block;
+  width: fit-content;
+}

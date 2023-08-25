@@ -16,7 +16,7 @@
         <ul>
           <li>
             <!-- * [Learnt] class="fa-fw" is for fixed width of icons -->
-            <a href="index.html" class="cur-page fs-14"
+            <a href="index.html" class="fs-14"
               ><i class="far fa-chart-bar fa-fw"></i
               ><span class="c-black hide-mobile"> dashboard</span></a
             >
@@ -52,7 +52,7 @@
             >
           </li>
           <li>
-            <a href="files.html" class="fs-14"
+            <a href="files.html" class="fs-14 cur-page"
               ><i class="fa-regular fa-circle-user fa-fw"></i
               ><span class="c-black hide-mobile"> files</span></a
             >
@@ -74,7 +74,7 @@
             <i class="fas fa-search fa-fw"></i>
             <input
               type="search"
-              class="txt-cap rad-6"
+              class="txt-cap rad-6 fs-14"
               placeholder="type a keyword"
             />
           </div>
@@ -87,14 +87,361 @@
         </nav>
         <!-- ? End Navbar -->
         <!-- ! Start content -->
-
-        <h2 class="main-title txt-cap p-20 p-relative">dashboard</h2>
-        <div class="grid"></div>
-        <!-- ? End content -->
+        <h2 class="main-title txt-cap p-20 p-relative">files</h2>
+        <div class="content-wrapper d-flex gap-20 p-20 d-block-mobile">
+          <div class="file-statistics bg-white txt-c-mobile mb-20 p-20 rad-6">
+            <h3 class="txt-cap">file statistics</h3>
+            <ul>
+              <li class="d-flex juc-between align-c p-10 rad-6">
+                <div class="item-content d-flex gap-10 align-c">
+                  <i
+                    class="fa-regular fa-file-pdf fa-lg c-blue pt-20 pb-20 pl-15 pr-15 fs-16"
+                    style="background-color: #cce3ff"
+                  ></i>
+                  <div class="text">
+                    <span class="fs-14 d-block mb-5">PDF Files</span>
+                    <span class="fs-14 c-grey">130</span>
+                  </div>
+                </div>
+                <span class="fs-14 c-grey">6.5GB</span>
+              </li>
+              <li class="d-flex juc-between align-c p-10 rad-6">
+                <div class="item-content d-flex gap-20 align-c">
+                  <i
+                    class="fa-regular fa-images fa-lg fa-lg c-green pt-20 pb-20 pl-15 pr-15 fs-16"
+                    style="background-color: #d3f3df"
+                  ></i>
+                  <div class="text">
+                    <span class="fs-14 d-block mb-5">images</span>
+                    <span class="fs-14 c-grey">130</span>
+                  </div>
+                </div>
+                <span class="fs-14 c-grey">6.5GB</span>
+              </li>
+              <li class="d-flex juc-between align-c p-10 rad-6">
+                <div class="item-content d-flex gap-10 align-c">
+                  <i
+                    class="fa-regular fa-file-pdf fa-lg c-red pt-20 pb-20 pl-15 pr-15 fs-16"
+                    style="background-color: #fdd9d7"
+                  ></i>
+                  <div class="text">
+                    <span class="fs-14 d-block mb-5">PDF Files</span>
+                    <span class="fs-14 c-grey">130</span>
+                  </div>
+                </div>
+                <span class="fs-14 c-grey">6.5GB</span>
+              </li>
+              <li class="d-flex juc-between align-c p-10 rad-6">
+                <div class="item-content d-flex gap-10 align-c">
+                  <i
+                    class="fa-regular fa-file-pdf fa-lg c-orange pt-20 pb-20 pl-15 pr-15 fs-16"
+                    style="background-color: #fdecce"
+                  ></i>
+                  <div class="text">
+                    <span class="fs-14 d-block mb-5">PDF Files</span>
+                    <span class="fs-14 c-grey">130</span>
+                  </div>
+                </div>
+                <span class="fs-14 c-grey">6.5GB</span>
+              </li>
+            </ul>
+          </div>
+          <ul class="file-wrapper d-grid gap-10">
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/pdf.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-file.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/avi.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-file.avi</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/eps.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-eps.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/dll.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-dll.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/psd.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-psd.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/avi.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-avi.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/pdf.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-avi.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/psd.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-psd.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/dll.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-dll.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/eps.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-eps.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/pdf.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-pdf.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/avi.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-avi.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/eps.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-file.eps</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/dll.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-dll.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/avi.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-avi.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/eps.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-eps.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/psd.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-psd.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/png.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-png.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/dll.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-dll.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/psd.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-psd.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/eps.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-eps.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/avi.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-avi.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/pdf.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-pdf.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+            <li class="bg-white p-10 rad-6 txt-c">
+              <div class="head p-relative">
+                <i class="fa-solid fa-download c-grey"></i>
+                <img src="imgs/png.svg" alt="" class="mb-15 mt-15" />
+                <span class="fs-16 d-block w-light-bold">my-png.pdf</span>
+              </div>
+              <span class="d-block mt-10 mb-10 fs-14 c-grey pb-10">AK</span>
+              <div class="metadata d-flex juc-between">
+                <span class="fs-14 c-grey">20/06/2020</span>
+                <span class="fs-14 c-grey">5.5MB</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- ? End Content 
-
-    
-    --></div>
+        
+        
+      -->
+    </div>
   </body>
 </html>
