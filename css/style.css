@@ -796,3 +796,209 @@ aside > ul li a:hover,
   display: block;
   width: fit-content;
 }
+
+/* ! Start Settings page */
+/* !Start Toggle checkbox */
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.toggle-switch {
+  background: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.toggle-switch::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00d";
+  font-weight: 900;
+  font-size: 14px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  --sz: 24px;
+  width: var(--sz);
+  height: var(--sz);
+  background-color: var(--white-color);
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+  transition: var(--main-transition);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  left: calc(100% - var(--sz) - 4px);
+  content: "\f00c";
+  color: var(--blue-color);
+}
+.site-control > textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  height: 150px;
+  border: 1px solid #ccc;
+}
+
+/* ? End Toggle checkbox */
+/* ! Start General info*/
+.general-info form {
+}
+.general-info form > label .general-info form > label:nth-of-type(1) {
+}
+.general-info form > label:nth-of-type(2) {
+}
+.general-info form > label:nth-of-type(3) {
+}
+.general-info form > input {
+  border: 1px solid #ccc;
+}
+.general-info form > input:nth-of-type(1) {
+}
+.general-info form > input:nth-of-type(2) {
+}
+.general-info form > input:nth-of-type(3) {
+  width: calc(100% - 100px);
+  cursor: no-drop;
+  background-color: #f0f4f8;
+}
+.general-info form > a {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* ? End General info*/
+.security-info .option {
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+.security-info .option:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+/* ? End Settings page */
+/* ! Start social info */
+.social-info > form > div {
+  border: 1px solid #ccc;
+  background-color: #f6f6f6;
+}
+.social-info > form > div > input {
+  border: none;
+  background-color: transparent;
+  border-left: 1px solid #ccc;
+}
+
+/* ? End social info */
+/* ! Start Widget Control */
+/* ! Start Backup manager */
+.control {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.control + label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.control + label:hover::before {
+  border-color: var(--blue-color);
+}
+.control + label::before,
+.control + label::after {
+  font-family: "Font Awesome 6 Free";
+  content: "";
+  font-weight: 900;
+  font-size: 14px;
+  /*  */
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%);
+  transition: var(--main-transition);
+}
+.control + label::before {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #888;
+  border-radius: 4px;
+}
+.control + label::after {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%) scale(0) rotate(360deg);
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+.control:checked + label::after {
+  content: "\f00c";
+  transform: translateY(-50%) scale(1);
+  border-radius: 4px;
+}
+
+.control[type="radio"] + label::before {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+.control[type="radio"] + label::after {
+  border-radius: 50%;
+  left: -4px;
+  width: 14px;
+  height: 14px;
+}
+.control[type="radio"]:checked + label::after {
+  content: "";
+}
+.control[type="radio"]:checked + label::before {
+  border-color: var(--blue-color);
+}
+.backup-manager > ul {
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #eee;
+}
+
+
+.servers input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.server {
+  flex: 1;
+  border: 1px solid #eee;
+  border-radius: 6px;
+
+  transition: var(--main-transition);
+}
+.server label {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  
+}
+.server label i {
+  font-size: 16px;
+  
+}
+.server label  span{
+  font-size: 16px;
+  
+}
+.servers input:checked + .server {
+  color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+/* ? End Backup manager */
