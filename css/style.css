@@ -674,7 +674,14 @@ aside > ul li a:hover,
   font-weight: 600;
   font-size: 48px;
 }
-
+@media (max-width: 768px) {
+  .friends-wrapper > li {
+    margin-top: 20px;
+  }
+  .plan-wrapper > li {
+    margin-top: 20px;
+  }
+}
 /* ? End Friends Wrapper */
 /* ! Start Projects wrapper */
 
@@ -702,7 +709,7 @@ aside > ul li a:hover,
   border-bottom: 1px solid #eee;
 }
 .projects-wrapper .price .bar {
-  width: 260px;
+  max-width: 260px;
   height: 8px;
   background-image: linear-gradient(
     to right,
@@ -796,7 +803,12 @@ aside > ul li a:hover,
   display: block;
   width: fit-content;
 }
-
+@media (max-width: 768px) {
+  .plan-wrapper > li > a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* ! Start Settings page */
 /* !Start Toggle checkbox */
 .toggle-checkbox {
@@ -1010,8 +1022,8 @@ aside > ul li a:hover,
   justify-content: center;
   align-content: center;
 }
-@media (max-width:767px){
-  .personal-info .user{
+@media (max-width: 767px) {
+  .personal-info .user {
     border: none;
   }
 }
@@ -1047,15 +1059,64 @@ aside > ul li a:hover,
 .general-info {
   flex: 1;
 }
-.general-info .toggle{
+.general-info .toggle {
   margin-top: 10px;
 }
-.infos{
-
+.infos {
+  flex-wrap: wrap;
   flex: 1;
   gap: 30px;
   padding-bottom: 15px;
   margin-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
+@media (max-width: 430px) {
+  .infos .info > span:last-of-type {
+    font-size: 13px;
+  }
+  .infos .info > span:first-of-type {
+    font-size: 14px;
+  }
+}
+
+.toggle .toggle-switch {
+  height: 20px;
+}
+.toggle .toggle-switch::before {
+  font-size: 10px;
+  --sz: 14px;
+  width: var(--sz);
+  height: var(--sz);
+  top: 3px;
+}
+
 /* ? End general info */
+/* ! Start my-skills */
+.skill-row {
+  padding-bottom: 15px;
+  margin-top: 10px;
+}
+.skill-row:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.skill-row span {
+  display: inline-block;
+  margin-top: 5px;
+}
+/* ? End my-skills */
+/* ! start Latest activities */
+.latest-activites {
+  flex: 1;
+}
+.latest-activites .news {
+}
+.latest-activites .news .single-news {
+}
+.latest-activites .news .single-news {
+}
+.latest-activites .news .single-news .details > img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+/* ? End Latest activities */
